@@ -1,0 +1,7 @@
+node_modules
+config
+.editorconfig
+.eslintrc.json
+.eslintignore
+ormconfig.json
+prettier.config.js
