@@ -1,30 +1,30 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @type/jsonwebtoken
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init -Y
 
 PATH: 
-  C:\Python38\Scripts\;C:\Python38\;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;D:\Git\cmd;D:\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\nodejs\;C:\Program Files\OpenJDK\openjdk-8u262-b10\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Debora\AppData\Local\Microsoft\WindowsApps;C:\Users\Debora\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Debora\AppData\Local\Yarn\bin;D:\Android\SDK\emulator;D:\Android\SDK\tools;D:\Android\SDK\tools\bin;D:\Android\SDK\platform-tools;C:\Users\Debora\AppData\Roaming\npm;C:\Users\Debora\.dotnet\tools;
+  C:\sybase\JS-12_5\bin;C:\sybase\ADO.NET\dll;C:\sybase\ODBC;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\deboracavallari\AppData\Local\Microsoft\WindowsApps;C:\Users\deboracavallari\.dotnet\tools;C:\Users\deboracavallari\AppData\Roaming\npm;C:\Users\deboracavallari\AppData\Local\Yarn\bin;C:\Users\deboracavallari\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\deboracavallari\AppData\Local\Microsoft\WindowsApps;C:\Users\deboracavallari\.dotnet\tools;C:\Users\deboracavallari\AppData\Roaming\npm;C:\Users\deboracavallari\AppData\Local\Yarn\bin;C:\Users\deboracavallari\AppData\Local\Programs\Microsoft VS Code\bin;C:\tools\dart-sdk\bin;C:\Users\deboracavallari\AppData\Roaming\Pub\Cache\bin;
 
 Yarn version: 
   1.22.5
 
 Node version: 
-  15.0.1
+  15.3.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@type%2fjsonwebtoken: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
-      at Request.emit (node:events:327:20)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
-      at Request.emit (node:events:327:20)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
-      at Object.onceWrapper (node:events:433:28)
-      at IncomingMessage.emit (node:events:339:22)
-      at endReadableNT (node:internal/streams/readable:1289:12)
-      at processTicksAndRejections (node:internal/process/task_queues:80:21)
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137009:13)
+      at Interface.emit (node:events:376:20)
+      at Interface._ttyWrite (node:readline:880:16)
+      at ReadStream.onkeypress (node:readline:213:10)
+      at ReadStream.emit (node:events:376:20)
+      at emitKeys (node:internal/readline/utils:345:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:readline:1149:36)
+      at ReadStream.emit (node:events:376:20)
+      at addChunk (node:internal/streams/readable:304:12)
 
 npm manifest: 
   {
@@ -39,6 +39,7 @@ npm manifest:
     },
     "dependencies": {
       "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
       "date-fns": "^2.16.1",
       "express": "^4.17.1",
       "jsonwebtoken": "^8.5.1",
@@ -51,6 +52,7 @@ npm manifest:
     "devDependencies": {
       "@types/bcryptjs": "^2.4.2",
       "@types/express": "^4.17.8",
+      "@types/jsonwebtoken": "^8.5.0",
       "@typescript-eslint/eslint-plugin": "^4.6.0",
       "@typescript-eslint/parser": "^4.6.0",
       "eslint": "6.8.0",
@@ -168,6 +170,13 @@ Lockfile:
     version "0.0.29"
     resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
     integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
+  
+  "@types/jsonwebtoken@^8.5.0":
+    version "8.5.0"
+    resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-8.5.0.tgz#2531d5e300803aa63279b232c014acf780c981c5"
+    integrity sha512-9bVao7LvyorRGZCw0VmH/dr7Og+NdjYSsKAxB43OQoComFbBgsEpoR9JW6+qSq/ogwVBg8GI2MfAlk4SYI4OLg==
+    dependencies:
+      "@types/node" "*"
   
   "@types/mime@*":
     version "2.0.3"
@@ -686,6 +695,14 @@ Lockfile:
     version "0.4.0"
     resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
     integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
+  
+  cors@^2.8.5:
+    version "2.8.5"
+    resolved "https://registry.yarnpkg.com/cors/-/cors-2.8.5.tgz#eac11da51592dd86b9f06f6e7ac293b3df875d29"
+    integrity sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==
+    dependencies:
+      object-assign "^4"
+      vary "^1"
   
   cross-spawn@^6.0.5:
     version "6.0.5"
@@ -1899,7 +1916,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
     integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
   
-  object-assign@^4.0.1:
+  object-assign@^4, object-assign@^4.0.1:
     version "4.1.1"
     resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
     integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
@@ -2924,7 +2941,7 @@ Lockfile:
       spdx-correct "^3.0.0"
       spdx-expression-parse "^3.0.0"
   
-  vary@~1.1.2:
+  vary@^1, vary@~1.1.2:
     version "1.1.2"
     resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
     integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
