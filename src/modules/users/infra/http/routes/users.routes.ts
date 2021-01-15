@@ -1,7 +1,12 @@
 import { Router } from 'express';
-import CreateUserService from '../services/CreateUserService';
+import CreateUserService from '@modules/users/services/CreateUserService';
 
 const usersRouter = Router();
+
+interface UserWithoutPassword {
+  email:string
+  password?: string
+}
 
 usersRouter.post('/', async (request, response) => {
   try {
@@ -9,7 +14,7 @@ usersRouter.post('/', async (request, response) => {
 
     const createUser = new CreateUserService();
 
-    const user = await createUser.execute({
+    const user: UserWithoutPassword = await createUser.execute({
       name,
       email,
       password,
